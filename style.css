@@ -5,6 +5,9 @@
 body {
   background-color: rgba(23, 135, 110, 0.05);
 }
+a {
+  text-decoration: none;
+}
 
 .title {
   width: 100%;
@@ -23,6 +26,15 @@ body {
 .heading {
   font-family: "Ms Madi", cursive;
   font-size: 5rem;
+}
+
+.scroll {
+  background-color: rgba(23, 135, 110, 0.3);
+  text-align: center;
+  font-family: "Merriweather", serif;
+  padding: 55px;
+  font-size: 2.5rem;
+  color: black;
 }
 
 p {
@@ -59,10 +71,15 @@ p {
   margin: 10px 0;
 }
 
+footer {
+  background-color: rgba(23, 135, 110, 0.8);
+  padding: 50px;
+  text-align: center;
+  color: aliceblue;
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 600px) {
-  .block {
-    padding: 0;
-  }
   .block > div {
     flex: 100%;
     margin: 10px 0;
