@@ -43,24 +43,29 @@ var myChart = new Chart(ctx, {
         fill: true,
       },
 
-      // Data Set 2
-      // {
-      //   //  Chart Label
-      //   label: "Framework",
+      {
+        label: ["Combustion with Energy Recovery"],
+        data: [
+          0, 0, 140000, 2980000, 4120000, 4330000, 4530000, 5330000, 5590000,
+          5620000,
+        ],
+        // Background Color
+        backgroundColor: ["rgba(98, 196, 244, 0.2)"],
+        borderColor: ["rgba(98, 196, 244, 1)"],
+        fill: true,
+      },
 
-      //   // Actual Data
-      //   data: [10, 8, 3, 7, 8, 9],
-
-      //   // Background Color
-      //   backgroundColor: [
-      //     "rgba(255, 97, 132, 0.2)",
-      //     "rgba(54, 16, 235, 0.2)",
-      //     "rgba(255, 26, 86, 0.2)",
-      //     "rgba(75, 12, 192, 0.2)",
-      //     "rgba(153, 2, 255, 0.2)",
-      //     "rgba(255, 19, 64, 0.2)",
-      //   ],
-      // },
+      {
+        label: ["Combustion with Energy Recovery"],
+        data: [
+          390000, 2900000, 6670000, 13780000, 19950000, 23270000, 24370000,
+          26030000, 26820000, 26970000,
+        ],
+        // Background Color
+        backgroundColor: ["rgba(215, 215, 215, 0.2)"],
+        borderColor: ["rgba(215, 215, 215, 1)"],
+        fill: true,
+      },
     ],
   },
 
