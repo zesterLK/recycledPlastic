@@ -1,0 +1,26 @@
+/* custom */
+.heading-main {
+  background-color: rgba(23, 135, 110, 0.3);
+  padding: 55px;
+  font-size: 2.5rem;
+  color: rgba(1, 16, 13, 0.8);
+}
+
+.para-main {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: rgba(1, 16, 13, 0.8);
+}
+
+.block-1,
+.block-2,
+.block-3,
+.block-4,
+.block-5 {
+  display: flex;
+  flex-direction: column;
+}
+
+.para-main {
+  padding: 0 60px;
+}

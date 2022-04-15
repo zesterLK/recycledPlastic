@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Styles -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -17,103 +23,284 @@
     <title>Data on Recycled Plastic</title>
   </head>
   <body>
-    <div class="container">
-      <table id="table-1" class="table">
-        <caption>
-          1960-2018 Data on Plastics in MSW by Weight (in thousands of U.S.
-          tons)
-        </caption>
-        <thead>
-          <tr>
-            <th scope="col">Management Pathway</th>
-            <th scope="col">1960</th>
-            <th scope="col">1970</th>
-            <th scope="col">1980</th>
-            <th scope="col">1990</th>
-            <th scope="col">2000</th>
-            <th scope="col">2005</th>
-            <th scope="col">2010</th>
-            <th scope="col">2015</th>
-            <th scope="col">2017</th>
-            <th scope="col">2018</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Generation</strong></td>
-            <td>390</td>
-            <td>2,900</td>
-            <td>6,830</td>
-            <td>17,130</td>
-            <td>25,550</td>
-            <td>29,380</td>
-            <td>31,400</td>
-            <td>34,480</td>
-            <td>35,410</td>
-            <td>35,680</td>
-          </tr>
-          <tr>
-            <td><strong>Recycled</strong></td>
-            <td>-</td>
-            <td>-</td>
-            <td>20</td>
-            <td>370</td>
-            <td>1,480</td>
-            <td>1,780</td>
-            <td>2,500</td>
-            <td>3,120</td>
-            <td>3,000</td>
-            <td>3,090</td>
-          </tr>
-          <tr>
-            <td><strong>Composted</strong></td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <td><strong>Combustion with Energy Recovery</strong></td>
-            <td>-</td>
-            <td>-</td>
-            <td>140</td>
-            <td>2,980</td>
-            <td>4,120</td>
-            <td>4,330</td>
-            <td>4,530</td>
-            <td>5,330</td>
-            <td>5,590</td>
-            <td>5,620</td>
-          </tr>
-          <tr>
-            <td><strong>Landfilled</strong></td>
-            <td>390</td>
-            <td>2,900</td>
-            <td>6,670</td>
-            <td>13,780</td>
-            <td>19,950</td>
-            <td>23,270</td>
-            <td>24,370</td>
-            <td>26,030</td>
-            <td>26,820</td>
-            <td>26,970</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="position-relative text-center">
+      <h1 class="">Plastic Globe</h1>
+      <p>
+        This site aims to provide data related to plastic production, wastage
+        and recycling.
+      </p>
+    </div>
 
-      <canvas
-        id="myChart"
-        width="700"
-        height="700"
-        aria-label="chart"
-        role="img"
-      ></canvas>
+    <div class="block-1">
+      <h2 class="heading-main">How much plastic does the world produce?</h2>
+      <p class="para-main">
+        The chart shows the increase of global plastic production, measured in
+        tonnes per year, from 1950 through to 2015.
+      </p>
+      <iframe
+        src="https://ourworldindata.org/grapher/global-plastics-production"
+        loading="lazy"
+        style="width: 100%; height: 600px; border: 0px none"
+      ></iframe>
+      <br />
+      <br />
+      <p class="para-main">
+        How much plastic has the world produced cumulatively?
+      </p>
+      <p class="para-main">
+        The next chart shows that by 2015, the world had produced 7.8 billion
+        tonnes of plastic — more than one tonne of plastic for every person
+        alive today.
+      </p>
+      <iframe
+        src="https://ourworldindata.org/grapher/cumulative-global-plastics"
+        loading="lazy"
+        style="width: 100%; height: 600px; border: 0px none"
+      ></iframe>
+    </div>
+
+    <div class="block-2">
+      <h2 class="heading-main">How do we dispose of our plastic?</h2>
+      <p class="para-main">
+        How has global plastic waste disposal method changed over time? In the
+        chart we see the share of global plastic waste that is discarded,
+        recycled or incinerated from 1980 through to 2015.
+      </p>
+      <p class="para-main">
+        Prior to 1980, recycling and incineration of plastic was negligible; 100
+        percent was therefore discarded. From 1980 for incineration, and 1990
+        for recycling, rates increased on average by about 0.7 percent per year.
+      </p>
+      <p class="para-main">
+        In 2015, an estimated 55 percent of global plastic waste was discarded,
+        25 percent was incinerated, and 20 percent recycled.
+      </p>
+      <p class="para-main">
+        If we extrapolate historical trends through to 2050 — as can be seen in
+        the chart here — by 2050, incineration rates would increase to 50
+        percent; recycling to 44 percent; and discarded waste would fall to 6
+        percent. However, note that this is based on the simplistic
+        extrapolation of historic trends and does not represent concrete
+        projections.
+      </p>
+      <iframe
+        src="https://ourworldindata.org/grapher/global-plastic-fate"
+        loading="lazy"
+        style="width: 100%; height: 600px; border: 0px none"
+      ></iframe>
+    </div>
+
+    <div class="block-3">
+      <h2 class="heading-main">
+        Before we talk about recycled plastic let's see which countries emit the
+        most plastic into the oceans?
+      </h2>
+      <p class="para-main">
+        The distribution of plastic inputs is reflected on the world map. There
+        we see each country’s share of global plastic emissions.
+      </p>
+      <p class="para-main">
+        The Philippines accounts for more than one-third (36%) of plastic inputs
+        – unsurprising given the fact that it’s home to seven of the top ten
+        rivers. This is because the Philippines consists of many small islands
+        where the majority of the population lives near the coast.
+      </p>
+      <iframe
+        src="https://ourworldindata.org/grapher/share-of-global-plastic-waste-emitted-to-the-ocean?country=Africa~Asia~Europe~South+America~North+America~Oceania"
+        loading="lazy"
+        style="width: 100%; height: 600px; border: 0px none"
+      ></iframe>
+    </div>
+
+    <div class="block-4">
+      <h2 class="heading-main">How is the plastic managed?</h2>
+
+      <p class="para-main">
+        EPA measures the generation, recycling, composting, combustion with
+        energy recovery and landfilling of plastic materials in municipal solid
+        waste.
+      </p>
+      <p class="para-main">
+        The primary data source on the generation of plastics is the American
+        Chemistry Council. In 2018, plastics generation was 35.7 million tons in
+        the United States, which was 12.2 percent of MSW generation.
+      </p>
+      <p class="para-main">
+        Check out the<a
+          href="https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/methodology-epas-facts-and-figures-materials"
+        >
+          EPA Methodology Document </a
+        >for further information on estimating the generation and management of
+        plastics.
+      </p>
+      <p class="para-main">
+        The data below are from 1960 to 2018, relating to the total number of
+        tons of plastics generated, recycled, composted, combusted with energy
+        recovery and landfilled.
+      </p>
+      <div class="container">
+        <table id="table-1" class="table">
+          <caption>
+            1960-2018 Data on Plastics in MSW(Municipal solid waste) by Weight
+            (in thousands of U.S. tons)
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Management Pathway</th>
+              <th scope="col">1960</th>
+              <th scope="col">1970</th>
+              <th scope="col">1980</th>
+              <th scope="col">1990</th>
+              <th scope="col">2000</th>
+              <th scope="col">2005</th>
+              <th scope="col">2010</th>
+              <th scope="col">2015</th>
+              <th scope="col">2017</th>
+              <th scope="col">2018</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Generation</strong></td>
+              <td>390</td>
+              <td>2,900</td>
+              <td>6,830</td>
+              <td>17,130</td>
+              <td>25,550</td>
+              <td>29,380</td>
+              <td>31,400</td>
+              <td>34,480</td>
+              <td>35,410</td>
+              <td>35,680</td>
+            </tr>
+            <tr>
+              <td><strong>Recycled</strong></td>
+              <td>-</td>
+              <td>-</td>
+              <td>20</td>
+              <td>370</td>
+              <td>1,480</td>
+              <td>1,780</td>
+              <td>2,500</td>
+              <td>3,120</td>
+              <td>3,000</td>
+              <td>3,090</td>
+            </tr>
+            <tr>
+              <td><strong>Composted</strong></td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td><strong>Combustion with Energy Recovery</strong></td>
+              <td>-</td>
+              <td>-</td>
+              <td>140</td>
+              <td>2,980</td>
+              <td>4,120</td>
+              <td>4,330</td>
+              <td>4,530</td>
+              <td>5,330</td>
+              <td>5,590</td>
+              <td>5,620</td>
+            </tr>
+            <tr>
+              <td><strong>Landfilled</strong></td>
+              <td>390</td>
+              <td>2,900</td>
+              <td>6,670</td>
+              <td>13,780</td>
+              <td>19,950</td>
+              <td>23,270</td>
+              <td>24,370</td>
+              <td>26,030</td>
+              <td>26,820</td>
+              <td>26,970</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="para-main">
+        Sources: Plastics information is from the American Chemistry Council,
+        the National Association for PET Container Resources and The Association
+        of Plastic Recyclers.
+      </p>
+      <p class="para-main">
+        A dash in the table means that data is not available.
+      </p>
+    </div>
+
+    <canvas
+      id="myChart"
+      width="700"
+      height="700"
+      aria-label="chart"
+      role="img"
+    ></canvas>
+
+    <div class="block-5">
+      <h2 class="heading-main">Can my recycling end up in landfill?</h2>
+      <p class="para-main">
+        Unfortunately, yes. Some plastics intended for recycling end up in
+        landfill.
+      </p>
+      <p class="para-main">
+        1. In most countries, some share of plastics intended for recycling are
+        eventually rejected at local or regional waste handling facilities. The
+        most common reason for rejected recycling is the ‘contamination’ of
+        recycling streams — this can result from high concentrations of
+        non-recyclable items in the waste stream, or contamination of other
+        forms such as food waste.
+      </p>
+      <p class="para-main">
+        Recycled plastic is a globally traded commodity. The majority of major
+        exporters are high-income countries. If we look at the top ten exporting
+        countries over the period from 1988 to 2016, we see that collectively
+        they account for 78 percent of global plastic exports (as shown in the
+        chart). All of the top ten exporters are defined as high-income.
+        Collectively, they have exported 168 million tonnes over this period,
+        equivalent to an economic value of US$65 billion.
+      </p>
+      <p class="para-main">
+        If we extrapolate historical trends through to 2050 — as can be seen in
+        the chart here — by 2050, incineration rates would increase to 50
+        percent; recycling to 44 percent; and discarded waste would fall to 6
+        percent. However, note that this is based on the simplistic
+        extrapolation of historic trends and does not represent concrete
+        projections. Some of this imported plastic therefore ended up in
+        landfill (and possibly at risk of entering the ocean).It’s challenging
+        to track the ultimate fate of traded plastics, however it’s likely that
+        at least some of recycled plastics exported from high-income countries
+        enters landfill in the countries to which they are traded.
+      </p>
+      <p class="para-main">
+        Following China’s ban on imported plastic in 2017, previous large
+        exporters such as the United States, Canada, Australia and UK have
+        failed to handle the increase in domestic plastic recycling demand. As
+        such, some materials intended for recycling have subsequently been
+        diverted to landfill.
+      </p>
+      <p class="para-main">
+        Plastics typically degrade in quality during the recycling process. For
+        most recyclable plastics, they are typically only suitable for recycling
+        once. As a result, most recycled plastic we use eventually reaches
+        landfill, even if it goes through an additional use cycle as another
+        product. Recycling typically delays rather than prevents plastic
+        disposal to landfill or incineration.
+      </p>
+      <iframe
+        src="https://ourworldindata.org/grapher/share-of-cumulative-plastic-exports"
+        loading="lazy"
+        style="width: 100%; height: 600px; border: 0px none"
+      ></iframe>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
