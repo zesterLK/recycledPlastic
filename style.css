@@ -1,26 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(23, 135, 110, 0.05);
+}
+
+.title {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Created with https://www.css-gradient.com */
+  background: #18876e0d;
+  background: -webkit-linear-gradient(top, #18876e0d, #18876e4d);
+  background: -moz-linear-gradient(top, #18876e0d, #18876e4d);
+  background: linear-gradient(to bottom, #18876e0d, #18876e4d);
+}
+
+.heading {
+  font-family: "Ms Madi", cursive;
+  font-size: 5rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4;
+}
+
 /* custom */
 .heading-main {
   background-color: rgba(23, 135, 110, 0.3);
+  font-family: "Merriweather", serif;
   padding: 55px;
   font-size: 2.5rem;
   color: rgba(1, 16, 13, 0.8);
 }
 
 .para-main {
-  font-size: 1rem;
-  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
   color: rgba(1, 16, 13, 0.8);
 }
 
-.block-1,
-.block-2,
-.block-3,
-.block-4,
-.block-5 {
-  display: flex;
-  flex-direction: column;
+.text,
+.graph {
+  width: 100%;
 }
 
-.para-main {
+.block {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0 60px;
+}
+.block > div {
+  flex: 50%;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .block {
+    padding: 0;
+  }
+  .block > div {
+    flex: 100%;
+    margin: 10px 0;
+  }
 }
